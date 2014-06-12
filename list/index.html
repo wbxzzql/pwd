@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My password book</title>
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header" class="jqm-header">
+		<h2>List</h2>
+	</div><!-- /header -->
+	<div data-role="main">	
+		<ul data-role="listview" data-inset="true" data-divider-theme="a" id="show_list">
+    	</ul>
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+            	<li><button class="ui-btn ui-icon-grid ui-btn-icon-top" id="rstbtn">Reset</button></li>
+                <li><a href="../index.html" class="ui-btn ui-icon-back ui-btn-icon-top" data-ajax="false">Back</a></li>
+            </ul>
+        </div><!-- /navbar -->
+</div><!-- /footer -->
+</div><!-- /page -->
+<script src="../js/password_book.js"></script>
+</body>
+</html>
