@@ -27,3 +27,13 @@ $("#rstbtn").on("click", function(){
 	localStorage.clear();
 	window.location.reload(true);
 });
+
+document.addEventListener("backbutton", function(e){
+    if($.mobile.activePage.is('#homepage')){
+        e.preventDefault();
+        navigator.app.exitApp();
+    }
+    else {
+        navigator.app.backHistory()
+    }
+}, false);
