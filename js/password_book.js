@@ -29,7 +29,7 @@ $("#rstbtn").on("click", function(){
 });
 
 document.addEventListener("backbutton", function(e){
-    if($.mobile.activePage.is('#homepage')){
+    if(document.getElementById('#homepage')){
         e.preventDefault();
         navigator.app.exitApp();
     }
